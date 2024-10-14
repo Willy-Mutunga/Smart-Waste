@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Waste Management System</title>
+  <link rel="stylesheet" href="admin_dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Dashboard</h2>
+    <div class="dashboard">
+      <div class="statistic">
+        <h3>Total Users</h3>
+        <p id="totalUsers">100</p>
+      </div>
+      <div class="statistic">
+        <h3>Total Feedback</h3>
+        <p id="totalFeedback">50</p>
+      </div>
+      <div class="statistic">
+        <h3>Total Reports</h3>
+        <p id="totalReports">30</p>
+      </div>
+    </div>
+    <h3>Waste Reports</h3>
+    <table id="reportsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Location</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Main Street</td>
+          <td>Pending</td>
+          <td>
+            <select>
+              <option value="resolve">Resolve</option>
+              <option value="ignore">Ignore</option>
+            </select>
+            <button>Update</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pine Avenue</td>
+          <td>Resolved</td>
+          <td>
+            <select>
+              <option value="resolve">Resolve</option>
+              <option value="ignore">Ignore</option>
+            </select>
+            <button>Update</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a href="register.html">Back to Home</a></p>
+  </div>
+
+  <script src="admin_dashboard.js"></script>
+</body>
+</html>

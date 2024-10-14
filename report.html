@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Waste - Waste Management System</title>
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Report Waste</h2>
+    <form id="wasteReportForm">
+      <div class="input-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="wasteType">Waste Type</label>
+        <select id="wasteType" name="wasteType" required>
+          <option value="" disabled selected>Select waste type</option>
+          <option value="Plastic">Plastic</option>
+          <option value="Organic">Organic</option>
+          <option value="Hazardous">Hazardous</option>
+          <option value="E-waste">E-waste</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the waste issue" required></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="image">Upload Image (Optional)</label>
+        <input type="file" id="image" name="image" accept="image/*">
+      </div>
+
+      <button type="submit">Submit Report</button>
+      <p><a href="register.html">Back to Home</a></p>
+    </form>
+  </div>
+
+  <script src="report.js"></script>
+</body>
+</html>

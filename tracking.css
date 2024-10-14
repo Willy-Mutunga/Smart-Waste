@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #c8e6c9;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #2e7d32;
+    color: white;
+  }
+  
+  td {
+    background-color: #f1f8e9;
+  }
+  
+  tbody tr:hover {
+    background-color: #c8e6c9;
+  }
+  
